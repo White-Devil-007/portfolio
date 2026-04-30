@@ -15,7 +15,8 @@
     --bg-color: #0b0c10;
     --second-bg-color: #12141a;
     --text-color: #e2e8f0;
-    --main-color: #6366f1; /* Indigo */
+    --main-color: #6366f1;
+    /* Indigo */
     --main-color-hover: #4f46e5;
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.08);
@@ -23,14 +24,16 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
     overflow-x: hidden;
 }
 
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    cursor: none; /* Hide default cursor to use custom */
+    cursor: none;
+    /* Hide default cursor to use custom */
     overflow-x: hidden;
 }
 
@@ -90,9 +93,11 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--bg-color);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 10px;
@@ -109,6 +114,7 @@ section {
     font-size: 4.5rem;
     margin-bottom: 5rem;
 }
+
 .heading span {
     color: var(--main-color);
     text-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
@@ -127,6 +133,7 @@ section {
     transition: 0.3s ease;
     border: 1px solid transparent;
 }
+
 .btn:hover {
     background: transparent;
     color: var(--main-color);
@@ -161,6 +168,7 @@ section {
     color: #fff;
     font-weight: 700;
 }
+
 .logo span {
     color: var(--main-color);
 }
@@ -289,11 +297,15 @@ section {
 }
 
 @keyframes animate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-<<<<<<< HEAD
 .profile-img {
     position: relative;
     width: 380px;
@@ -305,8 +317,6 @@ section {
     box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
 }
 
-=======
->>>>>>> 4d64d5db7859bb2b6a7cbd172114256e583b541d
 .image-placeholder {
     position: relative;
     width: 380px;
@@ -319,7 +329,7 @@ section {
     align-items: center;
     font-size: 15rem;
     color: var(--main-color);
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* About Section */
@@ -646,18 +656,30 @@ section {
 
 /* Responsiveness */
 @media (max-width: 1200px) {
-    html { font-size: 55%; }
+    html {
+        font-size: 55%;
+    }
 }
 
 @media (max-width: 991px) {
-    .header { padding: 2rem 3%; }
-    section { padding: 10rem 3% 2rem; }
-    .footer { padding: 2rem 3%; }
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
 }
 
 @media (max-width: 768px) {
-    #menu-icon { display: block; }
-    
+    #menu-icon {
+        display: block;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -670,35 +692,69 @@ section {
         border-bottom: 1px solid var(--glass-border);
         display: none;
     }
-    
+
     .navbar.active {
         display: block;
     }
-    
+
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
-    
-    .home { flex-direction: column; text-align: center; }
-    .home-content h3 { font-size: 2.6rem; }
-    .home-content h1 { font-size: 5rem; }
-    .home-img { margin-top: 4rem; width: 300px; height: 300px; }
-<<<<<<< HEAD
-    .profile-img, .image-placeholder { width: 280px; height: 280px; font-size: 10rem; }
-=======
-    .image-placeholder { width: 280px; height: 280px; font-size: 10rem; }
->>>>>>> 4d64d5db7859bb2b6a7cbd172114256e583b541d
-    
-    .about { flex-direction: column-reverse; }
-    .about-content h2 { text-align: center; }
-    .about-img { width: 250px; height: 250px; font-size: 10rem; margin-top: 3rem; }
-    
-    .contact-form .input-box input { width: 100%; }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img {
+        margin-top: 4rem;
+        width: 300px;
+        height: 300px;
+    }
+
+    .profile-img,
+    .image-placeholder {
+        width: 280px;
+        height: 280px;
+        font-size: 10rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .about-img {
+        width: 250px;
+        height: 250px;
+        font-size: 10rem;
+        margin-top: 3rem;
+    }
+
+    .contact-form .input-box input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
-    html { font-size: 50%; }
-    .contact-form .input-box input { width: 100%; }
+    html {
+        font-size: 50%;
+    }
+
+    .contact-form .input-box input {
+        width: 100%;
+    }
 }
